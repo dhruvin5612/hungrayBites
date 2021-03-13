@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Food Site</title>
+  <title>Hugry Bites</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
@@ -47,7 +47,7 @@
       color: black;
       font-size: 33px;
       line-height: 80px;
-      padding: 0 140px;
+      padding: 0 102px;
       font-weight: 600;
       font-family: 'Poppins', sans-serif;
     }
@@ -232,6 +232,38 @@
       color: white;
       opacity: 1;
     }
+
+    .mob-responsive {
+      margin-left: 140px;
+      position: absolute;
+      margin-top: 405px;
+      background: #fb9200;
+      padding: 10px;
+      border: 0;
+      border-radius: 30px;
+      color: #fff;
+      padding-left: 30px;
+      padding-right: 30px;
+      -webkit-box-shadow: 10px 13px 38px -19px rgba(251, 146, 0, 1);
+      -moz-box-shadow: 10px 13px 38px -19px rgba(251, 146, 0, 1);
+      box-shadow: 10px 13px 38px -19px rgba(251, 146, 0, 1);
+    }
+
+    @media (max: width 515px) {
+      .mob-responsive {
+        position: relative;
+        margin-top: 405px;
+        margin-left: 196px;
+      }
+
+    }
+
+    @media (max: width 515px) {
+      .text-mob {
+        font-size: 150%;
+      }
+
+    }
   </style>
 
 
@@ -243,7 +275,7 @@
   <div class="container-fluid p-0" style="background: url(bg.jpg) no-repeat;
   background-size: cover;
   height: calc(100vh);">
-    <p style="font-size: 240%;font-weight: bold;margin-left: 140px;position: absolute;margin-top: 110px;">Your Favorite
+    <p class="text-mob" style="font-size: 150%;font-weight: bold;margin-left: 140px;position: absolute;margin-top: 110px;">Your Favorite
       Food<br>Delivered Hot &<br> Fresh
 
     </p>
@@ -251,15 +283,13 @@
       the prep work, like peeding,<br> chopping & marinating, so you can cook a fresh food
 
     </p>
-    <button style="margin-left: 140px;position: absolute;margin-top: 370px;background: #fb9200;padding: 10px;border: 0;border-radius: 30px;color: #fff;padding-left: 30px;padding-right: 30px;-webkit-box-shadow: 10px 13px 38px -19px rgba(251,146,0,1);
--moz-box-shadow: 10px 13px 38px -19px rgba(251,146,0,1);
-box-shadow: 10px 13px 38px -19px rgba(251,146,0,1);">Order Now</button>
+    <button class="mob-responsive" style="">Order Now</button>
     <nav id="menu" style="position: fixed;z-index: 999;">
       <input type="checkbox" id="check">
       <label for="check" class="checkbtn">
-        <i class="fas fa-bars"></i>
+        <i class="fas fa-bars" style="color: #fb9200;"></i>
       </label>
-      <label class="logo">FOODDY</label>
+      <label class="logo">Hungry Bites</label>
       <ul>
 
         <li><a onclick="home_page()" class="active text-white">Home</a></li>
