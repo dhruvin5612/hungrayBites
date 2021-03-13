@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- Created By CodingNepal -->
 <html lang="en" dir="ltr">
 
 <head>
@@ -609,7 +608,7 @@
       var image = document.getElementById('foodAddImageInput').value = '';
     }
     else {
-      alert("Vui lòng nhập đầy đủ thông tin");
+      alert("Please enter full details");
     }
   }
 
@@ -906,7 +905,7 @@
     if (username != '' && password != '' && repassword != '' && password == repassword) {
       for (let i = 0; i < account.length; i++) {
         if (account[i].username == username) {
-          alert("ten tai khoan đã tồn tại");
+          alert("This account is already exists");
 
           checkUsername = 1;
           break;
@@ -920,11 +919,11 @@
         idup++;
         localStorage.setItem("idup", JSON.stringify(idup));
         console.log(account);
-        alert("dang ky thanh cong");
+        alert("Registered Successfully.");
         ManagementUser();
       }
     } else {
-      alert("chua thanh cong")
+      alert("Unsuccessful")
     }
   }
 
